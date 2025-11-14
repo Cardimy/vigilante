@@ -9,10 +9,10 @@ export default function ProjetoVigilante() {
       {/* HEADER */}
       <header className="max-w-3xl mx-auto text-center mb-16">
         <h1 className="text-5xl font-extrabold text-yellow-400 tracking-tight drop-shadow-lg">
-          🦇 Projeto Vigilante — Fase 1
+          🦇<br></br>Projeto Vigilante
         </h1>
         <p className="text-neutral-400 mt-4 text-lg">
-          Powerbuilding + Muay Thai — treinos de até 60 minutos
+          Powerbuilding + Muay Thai
         </p>
       </header>
 
@@ -26,17 +26,23 @@ export default function ProjetoVigilante() {
           <Card className="bg-neutral-900/60 border-neutral-800 backdrop-blur-sm hover:border-yellow-500/40 transition-all duration-200">
             <CardContent className="p-6">
               <h2 className="flex items-center gap-2 text-xl font-bold text-yellow-400 mb-4">
-                <Dumbbell size={20} /> Estrutura semanal
+                <Dumbbell size={20} /> Rotina semanal
               </h2>
 
               <ul className="text-neutral-300 space-y-2 leading-relaxed">
-                <li><strong>Segunda:</strong> Sombras de Gotham + Muay Thai</li>
-                <li><strong>Terça:</strong> Forja do Cavaleiro</li>
-                <li><strong>Quarta:</strong> Ascensão do Vigilante + Muay Thai</li>
+                <li><strong>Segunda:</strong> Muay Thai + Treino de força</li>
+                <p> </p>
+                <li><strong>Terça:</strong> Treino de força</li>
+                <p> </p>
+                <li><strong>Quarta:</strong> Muay Thai + Treino de resistência</li>
+                <p> </p>
                 <li><strong>Quinta:</strong> Cardio (1h)</li>
-                <li><strong>Sexta:</strong> Centro da Tempestade</li>
-                <li><strong>Sábado:</strong> Modo Predador</li>
-                <li><strong>Domingo:</strong> Cardio leve / descanso ativo</li>
+                <p> </p>
+                <li><strong>Sexta:</strong> Treino de resistência</li>
+                <p> </p>
+                <li><strong>Sábado:</strong> Treino de explosão</li>
+                <p> </p>
+                <li><strong>Domingo:</strong> Cardio</li>
               </ul>
             </CardContent>
           </Card>
@@ -49,11 +55,21 @@ export default function ProjetoVigilante() {
               </h2>
 
               <div className="text-neutral-300 space-y-2 leading-relaxed">
-                <p>• Descanso: <strong>60–90s</strong> principais / <strong>30–60s</strong> auxiliares.</p>
-                <p>• Progressão: aumente a carga com forma perfeita.</p>
-                <p>• Mobilidade: 5–10 min antes e após treinos.</p>
-                <p>• Sono: 7–9h por noite.</p>
-                <p>• Nutrição: proteína, carboidratos complexos, boas gorduras.</p>
+                <p><strong>Descanso:</strong></p>
+                <p>60–90s principais / 30–60s auxiliares.</p>
+                <p> </p>
+                <p><strong>Progressão:</strong></p>
+                <p>Aumente a carga de forma recorrente.</p>
+                <p> </p>
+                <p><strong>Mobilidade:</strong></p>
+                <p>5–10 min antes e após treinos.</p>
+                <p> </p>
+                <p><strong>Sono:</strong></p>
+                <p>7–9h por noite.</p>
+                <p> </p>
+                <p><strong>Nutrição:</strong></p>
+                <p>Alta proteína e carboidratos complexos.</p>
+                <p> </p>
               </div>
             </CardContent>
           </Card>
@@ -69,10 +85,10 @@ export default function ProjetoVigilante() {
               focus: "Potência de pernas e estabilidade para chutes.",
               exercises: [
                 "Agachamento livre — 4x8",
-                "Levantamento terra romeno — 4x6",
+                "Levantamento terra — 4x6",
                 "Leg press 45° — 3x10",
                 "Panturrilha em pé — 4x12",
-                "Prancha isométrica — 3x até a falha",
+                "Prancha isométrica — 3x falha",
               ],
             },
 
@@ -81,7 +97,7 @@ export default function ProjetoVigilante() {
               focus: "Força de empurrar e resistência de golpes.",
               exercises: [
                 "Supino reto barra — 4x6–8",
-                "Supino inclinado halteres — 3x8–10",
+                "Supino inclinado — 3x8–10",
                 "Crucifixo reto — 3x10–12",
                 "Barra fixa / puxada — 4x6",
                 "Remada curvada — 3x6–8",
@@ -127,7 +143,7 @@ export default function ProjetoVigilante() {
                 "Flexão pliométrica — 3x8–10",
                 "Remada TRX — 3x10",
                 "Prancha isométrica — 3x falha",
-                "Prancha lateral — 3x falha técnica",
+                "Prancha lateral — 3x falha",
                 "Battle Rope — 3x30s",
               ],
             },
