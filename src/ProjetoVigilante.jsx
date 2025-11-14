@@ -81,7 +81,7 @@ export default function ProjetoVigilante() {
           {[
 
             {
-              title: "🦇 Segunda — Sombras de Gotham",
+              title: "🦇 Segunda",
               focus: "Potência de pernas e estabilidade para chutes.",
               exercises: [
                 "Agachamento livre — 4x8",
@@ -93,7 +93,7 @@ export default function ProjetoVigilante() {
             },
 
             {
-              title: "⚙️ Terça — Forja do Cavaleiro",
+              title: "⚙️ Terça",
               focus: "Força de empurrar e resistência de golpes.",
               exercises: [
                 "Supino reto barra — 4x6–8",
@@ -108,7 +108,7 @@ export default function ProjetoVigilante() {
             },
 
             {
-              title: "🦾 Quarta — Ascensão do Vigilante",
+              title: "🦾 Quarta",
               focus: "Estabilidade e resistência de tronco.",
               exercises: [
                 "Agachamento hack — 4x10",
@@ -121,7 +121,7 @@ export default function ProjetoVigilante() {
             },
 
             {
-              title: "⚔️ Sexta — Centro da Tempestade",
+              title: "⚔️ Sexta",
               focus: "Resistência global e sinergia muscular.",
               exercises: [
                 "Supino inclinado halter — 3x8–10",
@@ -135,7 +135,7 @@ export default function ProjetoVigilante() {
             },
 
             {
-              title: "💥 Sábado — Modo Predador",
+              title: "💥 Sábado",
               focus: "Explosão, performance e coordenação.",
               exercises: [
                 "Levantamento terra — 4x6",
