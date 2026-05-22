@@ -162,6 +162,15 @@ export default function ProjetoVigilante() {
               ],
             },
 
+            {
+              title: "Domingo",
+              focus: "Repouso também faz parte do crescimento",
+              exercises:
+              [
+                "Descanso total",
+              ],
+            },
+
           ].map((treino, index) => (
             <Card
               key={index}
