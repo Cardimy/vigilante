@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Dumbbell, Activity } from "lucide-react";
 
 export default function ProjetoVigilante() {
+
+  const [checkedItems, setCheckedItems] = useState({});
+
+  const toggleExercise = (id) => {
+  setCheckedItems((prev) => ({
+    ...prev,
+    [id]: !prev[id],
+  }));
+};
+
+  const getWorkoutProgress = (title, exercises) => {
+  const completed = exercises.filter(
+    (_, i) => checkedItems[`${title}-${i}`]
+  ).length;
+
+  return {
+    completed,
+    total: exercises.length,
+    percentage:
+      exercises.length > 0
+        ? Math.round((completed / exercises.length) * 100)
+        : 0,
+  };
+};
+
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 px-4 py-10 font-sans">
       {/* HEADER */}
@@ -171,28 +196,92 @@ export default function ProjetoVigilante() {
               ],
             },
 
-          ].map((treino, index) => (
-            <Card
-              key={index}
-              className="bg-neutral-900/60 border-neutral-800 backdrop-blur-sm shadow-lg hover:scale-[1.01] hover:border-yellow-500/40 transition-all duration-200"
-            >
-              <CardContent className="p-8">
-                <h3 className="text-3xl font-bold text-yellow-400 mb-5 tracking-wide">
-                  {treino.title}
-                </h3>
+          ].map((treino, index) => {
 
-                <ol className="list-decimal list-inside text-neutral-300 space-y-2 text-lg leading-relaxed">
-                  {treino.exercises.map((ex, i) => (
-                    <li key={i}>{ex}</li>
-                  ))}
-                </ol>
+  const progress = getWorkoutProgress(
+    treino.title,
+    treino.exercises
+  );
 
-                <p className="text-sm text-neutral-500 mt-5 italic">
-                  Foco: {treino.focus}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+  return (
+    <Card
+      key={index}
+      className="bg-neutral-900/60 border-neutral-800 backdrop-blur-sm shadow-lg hover:scale-[1.01] hover:border-yellow-500/40 transition-all duration-200"
+    >
+      <CardContent className="p-8">
+
+        <h3 className="text-3xl font-bold text-yellow-400 mb-5 tracking-wide">
+          {treino.title}
+        </h3>
+
+        {/* Barra de progresso */}
+        <div className="mb-6">
+          <div className="flex justify-between text-sm text-neutral-400 mb-2">
+            <span>
+              {progress.completed}/{progress.total} concluídos
+            </span>
+
+            <span>
+              {progress.percentage}%
+            </span>
+          </div>
+
+          <div className="w-full h-3 bg-neutral-800 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-yellow-400 transition-all duration-500 ease-out"
+              style={{
+                width: `${progress.percentage}%`,
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Exercícios */}
+        <div className="space-y-3">
+          {treino.exercises.map((ex, i) => {
+            const exerciseId = `${treino.title}-${i}`;
+
+            return (
+              <label
+                key={exerciseId}
+                className="
+                  flex items-center gap-3
+                  rounded-lg
+                  px-3 py-2
+                  hover:bg-neutral-800/50
+                  transition-all
+                  cursor-pointer
+                "
+              >
+                <input
+                  type="checkbox"
+                  checked={checkedItems[exerciseId] || false}
+                  onChange={() => toggleExercise(exerciseId)}
+                  className="h-5 w-5 accent-yellow-400"
+                />
+
+                <span
+                  className={`text-lg transition-all ${
+                    checkedItems[exerciseId]
+                      ? "line-through text-neutral-500"
+                      : "text-neutral-300"
+                  }`}
+                >
+                  {ex}
+                </span>
+              </label>
+            );
+          })}
+        </div>
+
+        <p className="text-sm text-neutral-500 mt-5 italic">
+          Foco: {treino.focus}
+        </p>
+
+      </CardContent>
+    </Card>
+  );
+})}
         </section>
 
         {/* CALL TO ACTION */}
