@@ -82,7 +82,7 @@ export default function ProjetoVigilante() {
 
             {
               title: "Segunda",
-              focus: "Upper + Tríceps",
+              focus: "Força e volume de upper, com ênfase em tríceps",
               exercises:
               [
                 "Remada Cavalinho (T-bar row) — 1×12 + 4×6",
@@ -98,7 +98,7 @@ export default function ProjetoVigilante() {
 
             {
               title: "Terça",
-              focus: "Lower A: Quadríceps + Panturrilha",
+              focus: "Volume máximo em quadríceps e panturrilha",
               exercises:
               [
                 "Agachamento livre — 1×12 + 4×6",
@@ -111,8 +111,17 @@ export default function ProjetoVigilante() {
             },
 
             {
+              title: "Quarta",
+              focus: "Se manter ativo e deixar os músculos descansarem",
+              exercises:
+              [
+                "Descanso ativo: Cardio + Mobilidade",
+              ],
+            },
+
+            {
               title: "Quinta",
-              focus: "Upper + Bíceps",
+              focus: "Upper com foco em volume e ênfase em bíceps",
               exercises: [
                 "Supino com halteres — 1×12 + 4×8",
                 "Peck deck (crucifixo na máquina) — 4×10–12",
@@ -127,7 +136,7 @@ export default function ProjetoVigilante() {
 
             {
               title: "Sexta",
-              focus: "Lower B: Posterior + Glúteos",
+              focus: "Força e hipertrofia de posterior e glúteos",
               exercises: [
                 "Afundo no smith — 1×12 + 4×8",
                 "Stiff com halteres — 4×10",
@@ -140,7 +149,7 @@ export default function ProjetoVigilante() {
 
             {
               title: "Sábado",
-              focus: "Explosão, performance e coordenação.",
+              focus: "Potência, explosão e condicionamento metabólico",
               exercises: [
                 "Levantamento terra — 1×12 + 3x6",
                 "Agachamento com salto — 3x10",
