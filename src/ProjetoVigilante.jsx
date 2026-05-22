@@ -30,19 +30,19 @@ export default function ProjetoVigilante() {
               </h2>
 
               <ul className="text-neutral-300 space-y-2 leading-relaxed">
-                <li><strong>Segunda:</strong> Treino de Upper + Tríceps</li>
+                <li><strong>Segunda:</strong> <p> </p> Treino de Upper + Tríceps</li>
                 <p> </p>
-                <li><strong>Terça:</strong> Treino de Lower (Quadríceps + Panturrilha)</li>
+                <li><strong>Terça:</strong> <p> </p> Treino de Lower (Quadríceps + Panturrilha)</li>
                 <p> </p>
-                <li><strong>Quarta:</strong> Descanso ativo</li>
+                <li><strong>Quarta:</strong> <p> </p> Descanso ativo</li>
                 <p> </p>
-                <li><strong>Quinta:</strong> Treino de Upper + Bíceps</li>
+                <li><strong>Quinta:</strong> <p> </p> Treino de Upper + Bíceps</li>
                 <p> </p>
-                <li><strong>Sexta:</strong> Treino de Lower (Posterior + Glúteos)</li>
+                <li><strong>Sexta:</strong> <p> </p> Treino de Lower (Posterior + Glúteos)</li>
                 <p> </p>
-                <li><strong>Sábado:</strong> Treino de explosão</li>
+                <li><strong>Sábado:</strong> <p> </p> Treino de explosão</li>
                 <p> </p>
-                <li><strong>Domingo:</strong> Descanso total</li>
+                <li><strong>Domingo:</strong> <p> </p> Descanso total</li>
               </ul>
             </CardContent>
           </Card>
