@@ -12,7 +12,7 @@ export default function ProjetoVigilante() {
           🦇<br></br>Projeto Vigilante
         </h1>
         <p className="text-neutral-400 mt-4 text-lg">
-          Se tornando uma pessoa melhor<p></p>São Miguel Arcanjo, rogai pos nós
+          Se tornando uma pessoa melhor com a guarda de São Miguel Arcanjo
         </p>
       </header>
 
