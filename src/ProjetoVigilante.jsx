@@ -30,19 +30,19 @@ export default function ProjetoVigilante() {
               </h2>
 
               <ul className="text-neutral-300 space-y-2 leading-relaxed">
-                <li><strong>Segunda:</strong> Muay Thai + Treino de força</li>
+                <li><strong>Segunda:</strong> Treino de Upper + Tríceps</li>
                 <p> </p>
-                <li><strong>Terça:</strong> Treino de força</li>
+                <li><strong>Terça:</strong> Treino de Lower (Quadríceps + Panturrilha)</li>
                 <p> </p>
-                <li><strong>Quarta:</strong> Muay Thai + Treino de resistência</li>
+                <li><strong>Quarta:</strong> Descanso ativo</li>
                 <p> </p>
-                <li><strong>Quinta:</strong> Cardio (1h)</li>
+                <li><strong>Quinta:</strong> Treino de Upper + Bíceps</li>
                 <p> </p>
-                <li><strong>Sexta:</strong> Treino de resistência</li>
+                <li><strong>Sexta:</strong> Treino de Lower (Posterior + Glúteos)</li>
                 <p> </p>
                 <li><strong>Sábado:</strong> Treino de explosão</li>
                 <p> </p>
-                <li><strong>Domingo:</strong> Cardio</li>
+                <li><strong>Domingo:</strong> Descanso total</li>
               </ul>
             </CardContent>
           </Card>
@@ -81,70 +81,75 @@ export default function ProjetoVigilante() {
           {[
 
             {
-              title: "🦇 Segunda",
-              focus: "Potência de pernas e estabilidade para chutes.",
-              exercises: [
-                "Agachamento livre — 4x8",
-                "Levantamento terra — 4x6",
-                "Leg press 45° — 3x10",
-                "Panturrilha em pé — 4x12",
-                "Prancha isométrica — 3x falha",
+              title: "Segunda",
+              focus: "Upper + Tríceps",
+              exercises:
+              [
+                "Remada Cavalinho (T-bar row) — 1×12 + 4×6",
+                "Remada baixa no cabo (triângulo ou pegada neutra) — 4x8",
+                "Supino inclinado com halteres — 4×6",
+                "Supino reto com barra — 4×8",
+                "Desenvolvimento com halteres — 3×8",
+                "Tríceps testa com barra (skull crusher) — 3×8–10",
+                "Tríceps francês com halter (overhead) — 3×8–10",
+                "Tríceps corda no cabo — 3×8–10",
               ],
             },
 
             {
-              title: "⚙️ Terça",
-              focus: "Força de empurrar e resistência de golpes.",
-              exercises: [
-                "Supino reto barra — 4x6–8",
-                "Supino inclinado — 3x8–10",
-                "Crucifixo reto — 3x10–12",
-                "Barra fixa / puxada — 4x6",
-                "Remada curvada — 3x6–8",
-                "Desenvolvimento militar — 3x6",
-                "Tríceps testa — 3x8",
-                "Bíceps rosca direta — 3x8",
+              title: "Terça",
+              focus: "Lower A: Quadríceps + Panturrilha",
+              exercises:
+              [
+                "Agachamento livre — 1×12 + 4×6",
+                "Leg press 45° — 4×10",
+                "Hack squat — 3×10–12",
+                "Agachamento búlgaro com halteres — 3×8",
+                "Extensora — 3×12",
+                "Panturrilha em pé — 4×15",
               ],
             },
 
             {
-              title: "🦾 Quarta",
-              focus: "Estabilidade e resistência de tronco.",
+              title: "Quinta",
+              focus: "Upper + Bíceps",
               exercises: [
-                "Agachamento hack — 4x10",
-                "Stiff halteres — 3x10",
-                "Extensora — 3x12",
-                "Flexora — 3x12",
-                "Panturrilha sentado — 4x15",
-                "Abdominal máquina — 3x15",
+                "Supino com halteres — 1×12 + 4×8",
+                "Peck deck (crucifixo na máquina) — 4×10–12",
+                "Remada Cavalinho (T-bar row) — 4×6",
+                "Puxada alta com pegada neutra ou triângulo — 4×8",
+                "Elevação lateral com halteres sentado — 3×12–15",
+                "Rosca scott com barra W (skull crusher) — 3×8–10",
+                "Rosca alternada com halteres — 3×8–10",
+                "Rosca inclinada com halteres — 3×8–10",
               ],
             },
 
             {
-              title: "⚔️ Sexta",
-              focus: "Resistência global e sinergia muscular.",
+              title: "Sexta",
+              focus: "Lower B: Posterior + Glúteos",
               exercises: [
-                "Supino inclinado halter — 3x8–10",
-                "Crucifixo inclinado — 3x12",
-                "Remada unilateral — 3x8–10",
-                "Crucifixo invertido — 3x12",
-                "Elevação lateral — 3x12–15",
-                "Tríceps corda — 3x12",
-                "Bíceps alternado — 3x10–12",
+                "Afundo no smith — 1×12 + 4×8",
+                "Stiff com halteres — 4×10",
+                "Flexora deitada — 4×10–12",
+                "Leg press com pés altos e afastados — 4×10",
+                "Elevação pélvica — 4×10",
+                "Abdução no cabo ou máquina — 3x12–15",
               ],
             },
 
             {
-              title: "💥 Sábado",
+              title: "Sábado",
               focus: "Explosão, performance e coordenação.",
               exercises: [
-                "Levantamento terra — 4x6",
+                "Levantamento terra — 1×12 + 3x6",
                 "Agachamento com salto — 3x10",
-                "Flexão pliométrica — 3x8–10",
+                "Flexão pliométrica — 3x10",
                 "Remada TRX — 3x10",
+                "Abdominal na máquina — 3x15",
+                "Elevação de pernas suspenso — 3x15",
                 "Prancha isométrica — 3x falha",
-                "Prancha lateral — 3x falha",
-                "Battle Rope — 3x30s",
+                "Remo ergométrico — 250m sprint / descanso 45s, 6–8 rounds",
               ],
             },
 
