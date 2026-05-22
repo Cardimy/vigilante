@@ -58,18 +58,14 @@ export default function ProjetoVigilante() {
                 <p><strong>Descanso:</strong></p>
                 <p>60–90s principais / 30–60s auxiliares.</p>
                 <p> </p>
-                <p> </p>
                 <p><strong>Progressão:</strong></p>
                 <p>Aumente a carga de forma recorrente.</p>
-                <p> </p>
                 <p> </p>
                 <p><strong>Mobilidade:</strong></p>
                 <p>5–10 min antes e após treinos.</p>
                 <p> </p>
-                <p> </p>
                 <p><strong>Sono:</strong></p>
                 <p>7–9h por noite.</p>
-                <p> </p>
                 <p> </p>
                 <p><strong>Nutrição:</strong></p>
                 <p>Alta proteína e carboidratos complexos.</p>
