@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
@@ -99,3 +100,23 @@ export {
   CardDescription,
   CardContent,
 }
+=======
+export function Card({ className = "", children, ...props }) {
+  return (
+    <div
+      className={`rounded-xl border border-neutral-800 bg-neutral-900 shadow ${className}`}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
+
+export function CardContent({ className = "", children, ...props }) {
+  return (
+    <div className={`p-6 ${className}`} {...props}>
+      {children}
+    </div>
+  );
+}
+>>>>>>> 5e8b4869f22c1566e7023569dd13b0f9454309b3
